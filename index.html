@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>multiple-pic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--忽略页面中的数字识别为电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no"/>
+    <link rel="stylesheet" type="text/css" href="static/style.css?v=2.0" />
+    <script type="text/javascript" src="static/jquery.js?v=2.0"></script>
+</head>
+
+<body style="background:#f2f2f2">
+<div class="wrap_pics">
+    <!--公告头S-->
+    <div class="gghead_wrap">
+        <div class="head_cont">
+        </div>
+    </div>
+    <!--公告头E-->
+    <div class="bluepencil">
+        <form id="picForm">
+            <input type="text" name="title" placeholder="多图上传" class="caption_tit" disabled="disabled"/>
+        </form>
+        <div class="upload_box">
+            <dl class="upload_tu_list">
+                <dt class="sctp_btns pic">
+                    <input id="logo" type="file" name="file" accept="image/*" multiple="multiple">
+                </dt>
+            </dl>
+        </div>
+
+		<h3>
+		解决的问题：<br />
+			1.android不支持一次多选，用js 处理成多次添加图片；<br />
+			2.图片的预览；<br />
+			3.图片的预览删除；<br />
+			4.同一张图片的多次重复选择；<br />
+			5.图片上传旋转问题（主要针对问题和测试对象iphone 竖屏拍照上传）；<br />
+		</h3>
+    </div>
+</div>
+<!--弹出窗S-->
+<div class="motail_wrap">
+    <div class="motail_con">
+        <div class="motail_top">
+            <p class="motail_tit">精采时刻发布中…</p>
+        </div>
+    </div>
+</div>
+<div class="layerNote" style="display:none;">
+    <div class="font14 wordinfo">asdasdad</div>
+</div>
+<script type="text/javascript" src="static/jquery.form.js?v=1.0"></script>
+<script type="text/javascript" src="static/megapix-image.js?v=1.0"></script>
+<script type="text/javascript" src="static/exif.js?v=1.0"></script>
+<script type="text/javascript" src="static/multiple.pic.js?v=1.0"></script>
+</body>
+</html>
